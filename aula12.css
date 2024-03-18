@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #4e085f);
+    padding: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color:aliceblue;
+    text-decoration:none;
+    font-weight: 700;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color:aliceblue;
+    text-decoration:none;
+    margin-left: 40px;
+    font-weight: 500;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: aliceblue;
+    transition: 1s;
+}
+.navbar a:hover:before {
+    width: 100%;
+}
+.tarefas{
+    width: 100%;
+    max-width: 540px;
+    background: #543cc0;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+.tarefas h2{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+   border: none;
+   outline: none;
+   padding: 16px 50px;
+   background: #000000;
+   color:#ffffff;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 40px;
+   
+}
