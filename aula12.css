@@ -2,7 +2,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #ffffff, #4e085f);
+    background: linear-gradient(135deg, #98acb8, #ffffff);
     padding: 10px;
 }
 *{
@@ -53,14 +53,14 @@
 .tarefas{
     width: 100%;
     max-width: 540px;
-    background: #543cc0;
+    background: rgb(126, 151, 172);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
     
 }
 .tarefas h2{
-    color: #ffffff;
+    color: #000000;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -92,4 +92,47 @@ button{
    cursor: pointer;
    border-radius: 40px;
    
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/circulo.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through
+
+}
+ul li.checked::before{
+    background-image: url(img/marca-de-selecao.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
 }
